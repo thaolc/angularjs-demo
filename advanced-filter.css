@@ -1,0 +1,194 @@
+.container {
+  max-width: 1190px;
+  width: 100%;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+
+/***** ADVANCED FILTER START *****/
+.advanced-filter-inner {
+  background-color: #f7f8fb;
+  padding: 40px 30px 30px 30px;
+  margin-bottom: 30px;
+}
+
+.advanced-filter md-input-container{
+  display: block;
+  margin: -2px 0px 30px 0px;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3a4a62;
+}
+
+.advanced-filter md-input-container md-select .md-select-value {
+  border: 1px solid #c2cddd;
+  border-radius: 4px;
+  height: 48px;
+}
+.advanced-filter md-input-container md-select .md-select-value.md-select-placeholder {
+  padding: 0px 10px;
+}
+
+.advanced-filter .md-datepicker-input-container {
+  width: calc(100% - 40px);
+}
+
+.advanced-filter button.md-datepicker-button {
+  margin: 0px !important;
+}
+
+.advanced-filter md-input-container .md-input {
+  line-height: 48px;
+  height: 48px;
+}
+
+.advanced-filter ._md-datepicker-floating-label>md-datepicker .md-datepicker-button {
+  top: 20px;
+}
+
+/* datepicker */
+.advanced-filter md-datepicker {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.advanced-filter .md-datepicker-input {
+  font-size: 14px;
+  box-sizing: border-box;
+  max-width: auto;
+  padding: 0px;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+}
+
+.filter-submit {
+  text-align: right;
+}
+
+.btn-apply-filter {
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 4px;
+  border: solid 1px #c2cddd;
+  color: #667790;
+  font-size: 18px;
+}
+
+.btn-clean-filter {
+  color: #3a4a62;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.show-hide-filter {
+  font-size: 18px;
+  color: #0152e8;
+  display: block;
+  text-align: center;
+}
+
+/* .btn-clean-filter:hover {
+  text-decoration: none;
+} */
+
+/* enable absolute positioning */
+.advanced-filter .inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.advanced-filter .inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  top: 4px;
+  font-size: 18px;
+}
+
+/* align glyph */
+.advanced-filter .left-addon .glyphicon  { left:  0px; }
+.advanced-filter .right-addon .glyphicon { right: 0px; }
+
+.advanced-filter .glyphicon-search:before {
+  color: #0152e8;
+}
+
+/* add padding  */
+.advanced-filter .left-addon input  { padding-left:  30px; }
+.advanced-filter .right-addon input { padding-right: 30px; }
+
+.advanced-filter .inner-addon input {
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #c2cddd;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #667790;
+}
+
+.advanced-filter .inner-addon input:focus {
+  border: 1px solid #c2cddd;
+  border-bottom: 2px solid #183a99;
+  box-shadow: none;
+}
+
+.advanced-filter .process-input {
+  width: calc(100% - 50px);
+}
+
+.advanced-filter .glyphicon-menu-up,
+.advanced-filter .glyphicon-menu-down {
+  font-size: 15px;
+  top: 3px;
+  margin-left: 10px;
+  outline: none;
+}
+
+/***** ADVANCED FILTER END *****/
+
+/***** PROCESS *****/
+.process-card-item {
+  border-bottom: 1px solid #c2cddd;
+  padding: 25px 0px;
+}
+
+.process-card-title {
+  
+  color: #242a33;
+  
+}
+
+.level {}
+
+.level-1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.level-2 {
+  font-weight: normal;
+}
+
+.level-3 {
+  font-size: 16px;
+}
+
+.level-4 {
+  font-size: 15px;
+}
+
+.level-5 {}
+
+
+.is-open {
+  border-bottom: 0px solid #ffffff;
+  padding-bottom: 0px;
+}
+
+.is-actived {
+  color: #0152e8;
+}

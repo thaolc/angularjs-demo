@@ -1,0 +1,60 @@
+.container {
+  max-width: 1190px;
+  width: 100%;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+
+/***** PROCESS *****/
+.process-card-item {
+  border-bottom: 1px solid #c2cddd;
+  padding: 25px 0px;
+}
+
+.process-card-title {
+  color: #242a33;
+}
+
+.level {}
+
+.level-1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.level-2 {
+  font-weight: normal;
+}
+
+.level-3 {
+  font-size: 16px;
+}
+
+.level-4 {
+  font-size: 15px;
+}
+
+.level-5 {}
+
+
+.is-open {
+  border-bottom: 0px solid #ffffff;
+  padding-bottom: 0px;
+}
+
+.is-actived {
+  color: #0152e8;
+}
+
+.fa {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+.fa-minus {
+  color: #ffffff;
+  background-color: #337ab7;
+}

@@ -1,0 +1,15 @@
+<md-select ng-model="c.selectedList" md-on-close="c.clearSearchTerm()" md-container-class="selectdemoSelectHeader"
+    ng-change="c.updateSelectedList()" multiple>
+    <md-select-header class="demo-select-header">
+        <input ng-model="c.searchTerm" aria-label="" type="search" placeholder="c.placeholder"
+            class="demo-header-searchbox md-text select-language" ng-keydown="$event.stopPropagation();">
+    </md-select-header>
+    <div class="check-all">
+        <md-checkbox ng-model="c.isAllChecked" ng-change="c.toggleAllItems()">All</md-checkbox>
+    </div>
+    <md-optgroup label="language">
+        <md-option ng-value="item" ng-repeat="item in c.data | filter:c.searchTerm">
+            {{item}}
+        </md-option>
+    </md-optgroup>
+</md-select>

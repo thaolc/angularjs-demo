@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced Filter</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular Material CSS now available via Google CDN; version 1.2.1 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+
+    <!-- UI Bootstrap -->
+    <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+    <!-- ME -->
+    <script src="advanced-filter.js"></script>
+  </head>
+  <body ng-app="MyApp">
+    <!--container-->
+    <div class="container" ng-controller="MyController as c">
+
+      <!--advanced-filter-->
+      <section class="advanced-filter">
+        <div class="advanced-filter-inner">
+          <!--start row-->
+          <div class="row">
+            <div class="col-md-4">
+              <label class="filter-title">DOCUMENT TYPE</label>
+              <md-input-container>
+                <md-select ng-model="">
+                  <md-option ng-selected="true">All (25)</md-option>
+                  <md-option>Test</md-option>
+                </md-select>
+              </md-input-container>
+            </div>
+            <div class="col-md-4">
+              <label class="filter-title">NUMBER</label>
+              <md-input-container>
+                <md-select ng-model="">
+                  <md-option>All (25)</md-option>
+                  <md-option>Test</md-option>
+                </md-select>
+              </md-input-container>
+            </div>
+            <div class="col-md-4">
+              <label class="filter-title">ISSUE DATE</label>
+              <md-datepicker ng-model="ctrl.myDate" md-placeholder="Enter date" input-aria-describedby="datepicker-description" input-aria-labelledby="datepicker-header "></md-datepicker>
+            </div>
+          </div>
+          <!--end row-->
+          <div class=" advanced-filter-hide" ng-show="c.isShowAdvancedFilter">
+            <!--start row-->
+            <div class="row">
+              <div class="col-md-4">
+                <label class="filter-title">BUSINESS LINE</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="col-md-4">
+                <label class="filter-title">STAFF FUNCTION</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="col-md-4">
+                <label class="filter-title">SERVICE FUNCTION</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+            </div>
+            <!--start row-->
+            <div class="row">
+              <div class="col-md-4">
+                <label class="filter-title">PERIMETER</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="col-md-4">
+                <label class="filter-title">PROCESS</label>
+                <div class="m-b-xl">
+                  <div class="inner-addon right-addon">
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                    <input type="text" class="form-control process-input" placeholder="Search" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="filter-title">TITLE</label>
+                <div class="m-b-xl">
+                  <div class="inner-addon right-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" class="form-control" placeholder="Search" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--start row-->
+            <div class="row">
+              <div class="col-md-4">
+                <label class="filter-title">TAG</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="col-md-4">
+                <label class="filter-title">M. 231/01 OR EGCP SEC. COVERAGE</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div class="col-md-4">
+                <label class="filter-title">LINGUA</label>
+                <md-input-container>
+                  <md-select ng-model="">
+                    <md-option>All (25)</md-option>
+                    <md-option>Test</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+            </div>
+            
+          </div>
+          <div class="filter-submit">
+            <a href="#" class="btn-clean-filter">Pulisci Filtri</a>
+            <button class="btn btn-default btn-apply-filter">Applica Filtri</button>
+          </div>
+        </div>
+        <!--end advanced-filter--->
+        <a href="#" class="show-hide-filter" ng-click="c.onToggleAdvancedFilter()">Nascondi ricerca avanzata 
+          <i class="glyphicon glyphicon-menu-up" ng-show="c.isShowAdvancedFilter"></i>
+          <i class="glyphicon glyphicon-menu-down" ng-show="!c.isShowAdvancedFilter"></i>
+        </a>
+      </section>
+
+
+      
+    </div>
+    <!--end container--->
+  </body>
+</html>

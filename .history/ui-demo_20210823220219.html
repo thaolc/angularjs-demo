@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular Material CSS now available via Google CDN; version 1.2.1 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+
+    <!-- UI Bootstrap -->
+    <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+    <!-- ME -->
+    <link rel="stylesheet" href="ui-demo.css">
+    <script src="ui-demo.js"></script>
+
+</head>
+
+<body ng-app="MyApp">
+    <!--container-->
+    <div class="container" ng-controller="MyController as c">
+
+        <!--<h2 id="autocompleteTitle" class="md-title">
+      Use <code>md-autocomplete</code> to build an ordered set of chips.
+    </h2>
+    <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap
+              md-require-match="ctrl.autocompleteDemoRequireMatch"
+              input-aria-label="Favorite Vegetables">
+      <md-autocomplete
+          md-selected-item="ctrl.selectedItem"
+          md-search-text="ctrl.searchText"
+          md-items="item in ctrl.querySearch(ctrl.searchText)"
+          md-item-text="item.name"
+          input-aria-describedby="autocompleteTitle"
+          placeholder="Search for a vegetable">
+        <span md-highlight-text="ctrl.searchText">{{item.name}} :: {{item.type}}</span>
+      </md-autocomplete>
+      <md-chip-template>
+        <span>
+          <strong>{{$chip.name}}</strong>
+          <em>({{$chip.type}})</em>
+        </span>
+      </md-chip-template>
+    </md-chips>-->
+
+        <!--<md-autocomplete class="ep_autocomplete" md-selected-item="c.filters.enelLingua" md-input-name="Languages"
+            md-no-cache="true" md-items="item in c.querySearch('Languages', c.searchTermH)" md-item-text="item"
+            md-search-text="c.searchTermH" md-min-length="0" placeholder="All ({{c.dataLanguages.length}})"
+            input-aria-label="" md-floating-label="" md-require-match="false" ng-required="false"
+            md-clear-button="false">
+            <md-item-template>
+                <span aria-label="{{item}}" md-highlight-text="c.searchTermH" md-highlight-flags="^i">{{item}}</span>
+            </md-item-template>
+        </md-autocomplete>-->
+
+        <md-select ng-model="c.selectedList" md-on-close="c.clearSearchTerm()"
+            md-container-class="selectdemoSelectHeader" multiple>
+            <md-select-header class="demo-select-header">
+                <input ng-model="c.searchTerm" aria-label="" type="search" placeholder="Select language"
+                    class="demo-header-searchbox md-text select-language">
+                
+            </md-select-header>
+            <div>
+                <md-checkbox ng-model="c.isChecked" ng-change="c.toggleAll()">All</md-checkbox>
+            </div>
+            <md-optgroup label="language">
+                <md-option ng-value="item" ng-repeat="item in c.dataSource | filter:c.searchTerm" ng-click="c.toggleItem()">
+                    {{item}}
+                </md-option>
+            </md-optgroup>
+        </md-select>
+
+    </div>
+    <!--end container--->
+</body>
+
+</html>

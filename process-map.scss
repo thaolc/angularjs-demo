@@ -1,0 +1,97 @@
+.container {
+  max-width: 1190px;
+  width: 100%;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.pm-item {
+  
+}
+
+.pm-item-inner {
+
+  padding: 32px 24px;
+  box-shadow: 0 4px 16px 0 rgb(0, 0, 0, 0.16);
+  border-radius: 16px;
+  min-height: 580px;
+}
+
+
+.business-line-body {
+  font-size: 16px;
+}
+
+.business-line-body > div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.business-line-body > div p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 47px;
+}
+
+.business-line-body > div::before {
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #c2cddd;
+  position: absolute;
+  top: 47px;
+  left: 23px;
+  content: "";
+}
+
+.business-line-body > div:last-child::before {
+  content: none;
+}
+
+.business-line-body img {
+  width: 47px;
+  height: 47px;
+  float: left;
+  margin-right: 35px;
+}
+
+.staff-cross-item {
+  padding-right: 15px;
+  font-size: 16px;
+}
+
+.staff-cross-item p {
+  word-break: break-word;
+}
+
+.staff-cross-icon {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 47px;
+  background-color: #F36C0B;
+}
+
+.cross .staff-cross-icon {
+  background-color: #006F44;
+}
+
+.business-line-body div {
+  min-height: 47px;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 0px;
+}
